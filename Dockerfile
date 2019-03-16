@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk update && apk add --no-cache docker openrc
+RUN apk update && apk add --no-cache docker openrc git openssh
 COPY docker-entrypoint.sh /
 RUN chmod +x docker-entrypoint.sh
 
